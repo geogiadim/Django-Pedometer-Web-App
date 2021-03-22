@@ -1,0 +1,27 @@
+<!-- A navigation bar at the top using bootstrap-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a href="{% url 'home' %}" class="navbar-brand ml-4">Pedometer App</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarMenu">
+        <ul class="navbar-nav ml-auto mr-4">
+            <li class="nav-item">
+                <a href="{% url 'home' %}" class="nav-link">Home</a>
+            </li>
+            <li class="dropdown-divider"></li>
+            <li class="nav-item">
+                <a href="{% url 'log' %}" class="nav-link">Log</a>
+            </li>
+            <li class="dropdown-divider"></li>
+            <li class="nav-item">
+                <a href="{% url 'history' %}" class="nav-link">History</a>
+            </li>
+            <li class="dropdown-divider"></li>
+            <li class="nav-item">
+                <a href="{% url 'charts' %}" class="nav-link">Charts</a>
+            </li>
+            <li class="dropdown-divider"></li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,24 @@
+.bg-history{
+    background: url("images/bg-history.jpg") no-repeat center;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+}
+
+.table{
+    background: white;
+}
+.thead{
+    background: #007bff;
+}
+
+.table{
+    box-shadow: 5px 0 10px 0 #000;
+}
+
+#my-title{
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

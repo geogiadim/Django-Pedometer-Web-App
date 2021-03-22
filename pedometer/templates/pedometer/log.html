@@ -1,0 +1,23 @@
+{% extends 'pedometer/base.html' %}
+
+{% block style %}
+    <link rel="stylesheet" href="../../static/pedometer/log_form.css">
+{% endblock %}
+
+{%  block content %}
+<section class="container-fluid bg">
+    <section class="row justify-content-center">
+        <div class="form-container">
+            <div class="form-group">
+                <h2>Submit your steps</h2>
+                <form action='' method="POST"> {% csrf_token %}
+                    {{ form.as_p }}
+                    <input class="btn btn-primary btn-block"  type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+</section>
+{% endblock %}
+
+

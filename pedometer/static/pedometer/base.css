@@ -1,0 +1,26 @@
+/*general configuration*/
+html,body{
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+.my-wrapper{
+    min-height: 90%;
+}
+
+/* Navigation Bar configuration*/
+@media screen and (max-width: 575px) {
+    .nav-item{
+      padding-left: 22px;
+    }
+}
+@media screen and (min-width: 576px) {
+    .nav-item{
+        margin: 0 8px;
+    }
+}
+.dropdown-divider{
+    opacity: 0.7;
+    margin-top: 0;
+}
+
