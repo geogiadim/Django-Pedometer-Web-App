@@ -1,8 +1,8 @@
 /* Log.html */
-.bg{
+body{
     background: url("images/bg.jpg") no-repeat center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
 }
 
