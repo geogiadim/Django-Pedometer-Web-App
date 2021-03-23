@@ -2,4 +2,4 @@
 
 Sample Web app in Django Framework.
 
-<script> python manage.py runserver </script>
+<b> python manage.py runserver </b>
