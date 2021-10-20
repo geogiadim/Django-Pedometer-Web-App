@@ -62,7 +62,7 @@ class ChartData(APIView):
     authentication_classes = []
     permission_classes = []
 
-    def get(self, request, format=None):
+    def get(self, request):
         from_date = None
         to_date = None
         if 'from' in self.request.query_params.keys():
@@ -79,13 +79,13 @@ class ChartData(APIView):
         labels = [item.date for item in queryset]
         default_items = [item.steps for item in queryset]
 
-        #list = [item.date for item in queryset if item.steps > 100]
+        # list = [item.date for item in queryset if item.steps > 100]
 
-        dict = {str(item.date): item.steps for item in queryset}
+        my_dictionary = {str(item.date): item.steps for item in queryset}
 
         data = {
             'labels': labels,
             "default": default_items,
-            'dict': dict
+            'dict': my_dictionary
         }
         return Response(data)

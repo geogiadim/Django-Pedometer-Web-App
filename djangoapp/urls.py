@@ -15,14 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from pedometer.views import home_view, log_steps_view, history_steps_view, chart_steps_view, ChartData
+from pedometer import views
 
 urlpatterns = [
-    path('', home_view, name='home'),
-    path('home/', home_view, name='home'),
-    path('log/', log_steps_view, name='log'),
-    path('history/', history_steps_view, name='history'),
-    path('charts/', chart_steps_view, name='charts'),
-    path('api/charts/data', ChartData.as_view()),
+    path('', views.home_view, name='home'),
+    path('home/', views.home_view, name='home'),
+    path('log/', views.log_steps_view, name='log'),
+    path('history/', views.history_steps_view, name='history'),
+    path('charts/', views.chart_steps_view, name='charts'),
+    path('api/charts/data', views.ChartData.as_view()),
     path('admin/', admin.site.urls),
 ]
